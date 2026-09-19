@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: task-manager-client
+  namespace: task-manager
+spec:
+  selector:
+    app: task-manager-client
+  ports:
+    - port: 80
+      targetPort: 80
